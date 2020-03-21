@@ -1,0 +1,79 @@
+/* Main styles */
+:root {
+  --main: rgb(245, 245, 245);
+  --green: #1db932;
+  --grey: rgb(190, 189, 189);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(82, 79, 79);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 1rem auto;
+}
+
+p {
+  line-height: 1.4rem;
+  font-size: .9rem;
+}
+
+h3 {
+  margin: 1.4rem 0;
+}
+
+
+/* Get notified section */
+input {
+  padding: .8rem;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  margin-bottom: 5rem;
+}
+
+button {
+  border: none;
+  padding: .8rem 1.6rem;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: var(--green);
+  color: var(--main);
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: rgb(42, 214, 42);
+  cursor: pointer;
+}
+
+.grey {
+  background-color: var(--grey);
+}
+
+.get-notified {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.get-notified-item1 {
+  width: 40%
+}
+
+iframe {
+  border-radius: 10px;
+  overflow: auto;
+}
