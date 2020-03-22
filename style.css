@@ -2,7 +2,8 @@
 :root {
   --main: rgb(245, 245, 245);
   --green: #1db932;
-  --grey: rgb(190, 189, 189);
+  --grey: rgb(211, 204, 204);
+  --title: rgb(56, 55, 55);
 }
 
 * {
@@ -14,7 +15,7 @@
 body {
   background-color: var(--main);
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(82, 79, 79);
+  color: rgb(114, 108, 108);
 }
 
 .container {
@@ -29,6 +30,7 @@ p {
 
 h3 {
   margin: 1.4rem 0;
+  color: var(--title);
 }
 
 
@@ -41,9 +43,13 @@ input {
   margin-bottom: 5rem;
 }
 
+input:focus {
+  border: none;
+}
+
 button {
   border: none;
-  padding: .8rem 1.6rem;
+  padding: .8rem 1.8rem;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   background-color: var(--green);
@@ -52,6 +58,7 @@ button {
   margin-top: 1rem;
   font-weight: bold;
   letter-spacing: 1px;
+  transition: .7s;
 }
 
 button:hover {
@@ -63,7 +70,7 @@ button:hover {
   background-color: var(--grey);
 }
 
-.get-notified {
+.get-notified, .icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,6 +81,31 @@ button:hover {
 }
 
 iframe {
+  border: none;
   border-radius: 10px;
-  overflow: auto;
+  /* overflow: auto; */
+}
+
+/* Icons */
+i {
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 100%;
+  background-color: var(--green);
+  color: var(--main);
+  margin: 0 auto;
+  align-self: center;
+}
+
+.icons {
+  padding: 1.7rem 0;
+}
+
+.icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 26%;
+  text-align: center;
+  justify-content: space-between;
 }
